@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html>
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+  />
   <body>
-    <h2>To see dogs press the button below!</h2>
-
-    <button onclick="myFunction()">Let me see dogs!</button>
-
+    <center>
+      <h1 style="margin-top: 80px; color: #007bff;">DOGSERVATION</h1>
+    </center>
+    <center>
+      <img
+        style="margin: 10px;"
+        src="/static/images/mydoggos.jpg"
+        width="500px"
+      />
+    </center>
+    <center>
+      <h4 style="margin: 20px; color: #007bff;">
+        To see dogs press the button below!
+      </h4>
+    </center>
+    <center>
+      <button
+        type="button"
+        class="btn btn-primary btn-lg"
+        style="color:! white;"
+        onclick="redirect()"
+      >
+        Let me see dogs!
+      </button>
+    </center>
     <script>
-      function myFunction() {
+      function redirect() {
         location.replace("{{ site_url }}");
       }
     </script>
